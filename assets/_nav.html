@@ -1,0 +1,61 @@
+<section class="zh-nav">
+  
+
+  <input type="checkbox" id="zh-menu-toggle" class="zh-toggle" hidden>
+  <nav class="zh-bar" aria-label="Navigasi utama">
+
+    <a href="index.html" class="zh-logo" aria-label="MARSHAH HOLDING - Halaman Utama">
+      <img src="assets/img/logo-marshah.png" alt="Marshah Holding Sdn Bhd" class="zh-logo-img">
+    </a>
+
+    <ul class="zh-links">
+      <li><a href="index.html">Halaman Utama</a></li>
+      <li><a href="promosi.html">Promosi</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="rumah-siap.html">Rumah Siap</a></li>
+      <li class="zh-has-drop"><a href="profile-syarikat.html" tabindex="0">Tentang Kami
+        <svg class="zh-caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+        <ul class="zh-drop">
+          <li><a href="profile-syarikat.html">Profile Syarikat</a></li>
+          <li><a href="pengurusan.html">Pengurusan</a></li>
+        </ul>
+      </li>
+      <li><a href="kalkulator-lppsa.html">Kalkulator</a></li>
+      <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+      <span class="zh-nav__cursor" aria-hidden="true"></span>
+    </ul>
+
+    <div class="zh-cta">
+      <a href="index.html#katalog" aria-label="Muat turun katalog">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        DOWNLOAD KATALOG
+      </a>
+    </div>
+
+    <label for="zh-menu-toggle" class="zh-burger" aria-label="Buka menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </label>
+
+  </nav>
+  <script>/*zh-nav-pill*/
+  (function(){
+    var bar=document.currentScript.closest('.zh-nav'); if(!bar) return;
+    var ul=bar.querySelector('.zh-links'), cur=bar.querySelector('.zh-nav__cursor');
+    if(!ul) return;
+    var path=(location.pathname.split('/').pop()||'index.html'); if(path==='') path='index.html';
+    var map={'pengurusan.html':'profile-syarikat.html','portfolio-detail.html':'portfolio.html','promosi.php':'promosi.html'};
+    var target=map[path]||path;
+    ul.querySelectorAll('li>a').forEach(function(a){ if(a.getAttribute('href')===target) a.parentElement.classList.add('is-active'); });
+    if(cur){
+      ul.querySelectorAll('li').forEach(function(li){
+        li.addEventListener('mouseenter',function(){
+          if(window.innerWidth<=960) return;
+          cur.style.left=li.offsetLeft+'px'; cur.style.width=li.offsetWidth+'px'; cur.style.opacity='1';
+        });
+      });
+      ul.addEventListener('mouseleave',function(){ cur.style.opacity='0'; });
+    }
+  })();
+  </script>
+</section>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.php
+Disallow: /storage/
+
+Sitemap: https://www.marshahholding.com/sitemap.xml

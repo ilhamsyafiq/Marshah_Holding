@@ -1,0 +1,82 @@
+.zh-footer{background:var(--ink);color:#c9ccd2;font-family:var(--font-body),sans-serif;}
+    .zh-footer *{box-sizing:border-box;}
+    .zh-footer .zh-inner{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+    /* top strip */
+    .zh-footer .zh-topstrip{border-bottom:1px solid rgba(255,255,255,.1);}
+    .zh-footer .zh-topstrip .zh-inner{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px 26px;padding-top:20px;padding-bottom:20px;}
+    .zh-footer .zh-topstrip a{color:var(--sky);text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.4px;transition:color .2s ease,transform .2s ease;}
+    .zh-footer .zh-topstrip a:hover{color:var(--sky-light);transform:translateY(-1px);}
+
+    /* main grid */
+    .zh-footer .zh-main{padding-top:70px;padding-bottom:64px;}
+    .zh-footer .zh-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:44px;}
+    .zh-footer h4{font-family:var(--font-body),sans-serif;font-weight:700;font-size:.95rem;letter-spacing:1.2px;text-transform:uppercase;color:var(--white);margin:0 0 22px;}
+
+    /* logo — real Marshah logo image (white version for dark footer) */
+    .zh-footer .zh-logo{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+    .zh-footer .zh-foot-logo-img{display:block;height:96px;width:auto;filter:drop-shadow(0 3px 6px rgba(0,0,0,.45));}
+    .zh-footer .zh-logo .zh-mark{display:flex;gap:3px;}
+    .zh-footer .zh-logo .zh-mark svg{display:block;filter:drop-shadow(0 3px 5px rgba(0,0,0,.5)) drop-shadow(0 1px 0 rgba(205,27,233,.6));transition:transform .3s ease;}
+    .zh-footer .zh-logo:hover .zh-mark svg{transform:translateY(-1px);}
+    .zh-footer .zh-logo .zh-brand{
+      font-family:var(--font-body),sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:1px;line-height:1;
+      background:linear-gradient(160deg,#ffffff 0%,#F6DCFB 60%,#E79BF5 100%);
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--white);
+      text-shadow:0 1px 0 rgba(255,255,255,.25),0 3px 6px rgba(0,0,0,.55);
+    }
+    .zh-footer .zh-logo .zh-brand span{
+      background:linear-gradient(160deg,var(--purple-light) 0%,var(--purple) 60%,#B118D0 100%);
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--sky);
+      text-shadow:0 2px 5px rgba(114,19,163,.4);
+    }
+
+    /* address */
+    .zh-footer .zh-address{display:flex;gap:12px;align-items:flex-start;font-size:.92rem;line-height:1.7;color:#a7abb3;max-width:320px;}
+    .zh-footer .zh-address svg{flex:0 0 auto;margin-top:3px;color:var(--sky);}
+
+    /* location minimap (column 4) */
+    .zh-footer .zh-map{position:relative;height:200px;border-radius:14px;overflow:hidden;border:2px solid rgba(114,19,163,.5);box-shadow:0 12px 28px rgba(0,0,0,.38);}
+    .zh-footer .zh-map__frame{width:100%;height:100%;border:0;display:block;filter:grayscale(.25) contrast(1.05);}
+    .zh-footer .zh-map__link{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-start;padding:12px;text-decoration:none;background:linear-gradient(180deg,rgba(20,16,24,0) 55%,rgba(20,16,24,.4));transition:background .25s ease;}
+    .zh-footer .zh-map__link:hover{background:linear-gradient(180deg,rgba(20,16,24,0) 25%,rgba(74,11,107,.5));}
+    .zh-footer .zh-map__badge{display:inline-flex;align-items:center;gap:7px;background:var(--sky);color:var(--white);font-family:var(--font-body),sans-serif;font-weight:600;font-size:.8rem;padding:8px 13px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,.45);transition:background .25s ease,transform .25s ease;}
+    .zh-footer .zh-map__link:hover .zh-map__badge{background:var(--sky-light);transform:translateY(-2px);}
+    .zh-footer .zh-map__badge svg{width:15px;height:15px;}
+
+    /* small social row (bottom bar) */
+    .zh-footer .zh-foot-social{display:flex;align-items:center;gap:16px;}
+    .zh-footer .zh-foot-social a{color:#8b8f97;display:inline-flex;transition:color .2s ease,transform .2s ease;}
+    .zh-footer .zh-foot-social a:hover{color:var(--sky);transform:translateY(-2px);}
+    .zh-footer .zh-foot-social svg{width:18px;height:18px;}
+
+    /* link lists */
+    .zh-footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;}
+    .zh-footer ul a{color:#a7abb3;text-decoration:none;font-size:.92rem;font-weight:500;transition:color .2s ease,padding-left .2s ease;}
+    .zh-footer ul a:hover{color:var(--sky);padding-left:4px;}
+
+    /* social */
+    .zh-footer .zh-socials{display:flex;gap:12px;}
+    .zh-footer .zh-socials a{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.07);color:#c9ccd2;transition:background .25s ease,transform .25s ease,color .25s ease;}
+    .zh-footer .zh-socials a:hover{background:var(--sky);color:var(--white);transform:translateY(-3px);}
+    .zh-footer .zh-socials svg{width:20px;height:20px;}
+    .zh-footer .zh-follow-note{margin-top:20px;font-size:.88rem;line-height:1.6;color:#8b8f97;max-width:220px;}
+
+    /* bottom bar */
+    .zh-footer .zh-bottom{border-top:1px solid rgba(255,255,255,.1);}
+    .zh-footer .zh-bottom .zh-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;padding-top:26px;padding-bottom:26px;}
+    .zh-footer .zh-copy{font-size:.85rem;color:#8b8f97;}
+    .zh-footer .zh-bottom-links{display:flex;gap:22px;flex-wrap:wrap;}
+    .zh-footer .zh-bottom-links a{color:#8b8f97;text-decoration:none;font-size:.85rem;transition:color .2s ease;}
+    .zh-footer .zh-bottom-links a:hover{color:var(--sky);}
+
+    @media (max-width:800px){
+      .zh-footer .zh-grid{grid-template-columns:1fr 1fr;gap:38px 30px;}
+      .zh-footer .zh-main{padding-top:56px;padding-bottom:52px;}
+      .zh-footer .zh-topstrip .zh-inner{justify-content:flex-start;}
+      .zh-footer .zh-bottom .zh-inner{justify-content:center;text-align:center;}
+      .zh-footer .zh-bottom-links{justify-content:center;}
+    }
+    @media (max-width:480px){
+      .zh-footer .zh-grid{grid-template-columns:1fr;gap:34px;}
+    }

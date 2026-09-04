@@ -1,0 +1,15 @@
+/* ============================================================
+   MARSHAH HOLDING — Profil Syarikat
+   Promosi visual language. Most styling comes from shared.css
+   (.mh-* components); this file only holds page-specific bits.
+   ============================================================ */
+.zpf{color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.zpf img{display:block;max-width:100%}
+
+/* intro meta row (mirrors promosi hero meta) */
+.zpf-meta{
+  display:flex;flex-wrap:wrap;gap:6px 22px;margin:24px 0 0;padding-top:20px;
+  border-top:1px solid #ece7f0;font-size:.92rem;color:#4b5563;
+}
+.zpf-meta span{display:inline-flex;align-items:center;gap:8px}
+.zpf-meta b{color:var(--ink);font-weight:700}

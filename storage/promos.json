@@ -1,0 +1,59 @@
+{
+    "pkg_asas": {
+        "id": "pkg_asas",
+        "name": "Pakej Asas",
+        "desc": "Sesuai untuk rumah teres atau banglo kos rendah di atas tanah sendiri.",
+        "price": "RM155,000",
+        "badge": "",
+        "featured": false,
+        "active": true,
+        "features": [
+            { "text": "Reka bentuk pelan percuma", "included": true },
+            { "text": "Urusan kelulusan pelan PBT", "included": true },
+            { "text": "Bantuan pinjaman LPPSA / Bank", "included": true },
+            { "text": "Pengeluaran KWSP Akaun 2", "included": false },
+            { "text": "Urusan guaman percuma", "included": false },
+            { "text": "Waranti struktur 5 tahun", "included": true }
+        ],
+        "cta_url": "hubungi-kami.html",
+        "order": 1
+    },
+    "pkg_popular": {
+        "id": "pkg_popular",
+        "name": "Pakej Popular",
+        "desc": "Pilihan utama keluarga — banglo moden setingkat dengan kemasan lengkap.",
+        "price": "RM235,000",
+        "badge": "Popular",
+        "featured": true,
+        "active": true,
+        "features": [
+            { "text": "Reka bentuk pelan percuma", "included": true },
+            { "text": "Urusan kelulusan pelan PBT", "included": true },
+            { "text": "Bantuan pinjaman LPPSA / Bank", "included": true },
+            { "text": "Pengeluaran KWSP Akaun 2", "included": true },
+            { "text": "Urusan guaman percuma", "included": true },
+            { "text": "Waranti struktur 10 tahun", "included": true }
+        ],
+        "cta_url": "hubungi-kami.html",
+        "order": 2
+    },
+    "pkg_premium": {
+        "id": "pkg_premium",
+        "name": "Pakej Premium",
+        "desc": "Banglo mewah dua tingkat dengan spesifikasi premium & kemasan eksklusif.",
+        "price": "RM385,000",
+        "badge": "",
+        "featured": false,
+        "active": true,
+        "features": [
+            { "text": "Reka bentuk pelan percuma & 3D", "included": true },
+            { "text": "Urusan kelulusan pelan PBT", "included": true },
+            { "text": "Bantuan pinjaman LPPSA / Bank", "included": true },
+            { "text": "Pengeluaran KWSP Akaun 2", "included": true },
+            { "text": "Urusan guaman percuma", "included": true },
+            { "text": "Waranti struktur 15 tahun", "included": true }
+        ],
+        "cta_url": "hubungi-kami.html",
+        "order": 3
+    }
+}

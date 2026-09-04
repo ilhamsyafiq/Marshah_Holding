@@ -1,0 +1,70 @@
+.zp-contact{font-family:var(--font-body),sans-serif;color:var(--ink);line-height:1.65}
+    .zp-contact *{box-sizing:border-box}
+    .zp-contact .zp-inner{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+    /* PAGE HEADER */
+    .zp-contact .zp-header{background:linear-gradient(90deg,var(--navy),#013a73);min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px;color:var(--white)}
+    .zp-contact .zp-header h1{font-family:var(--font-body),sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:.5px;margin:0 0 10px}
+    .zp-contact .zp-crumb{font-size:.95rem;color:var(--sky-light);font-weight:500}
+    .zp-contact .zp-crumb span{color:rgba(255,255,255,.7)}
+
+    /* SECTION */
+    .zp-contact .zp-sec{padding:72px 0}
+    .zp-contact .zp-lead{max-width:640px;margin:0 auto 48px;text-align:center}
+    .zp-contact .zp-lead h2{font-family:var(--font-body),sans-serif;font-weight:700;text-transform:uppercase;color:var(--navy);font-size:clamp(1.5rem,3vw,2rem);margin:0 0 14px}
+    .zp-contact .zp-lead p{color:var(--gray);margin:0}
+
+    /* GRID */
+    .zp-contact .zp-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+
+    /* FORM CARD */
+    .zp-contact .zp-card{background:var(--white);border:1px solid #e6eef5;border-radius:var(--radius);box-shadow:0 10px 30px rgba(74,11,107,.06)}
+    .zp-contact .zp-form{padding:36px}
+    .zp-contact .zp-form h3{font-family:var(--font-body),sans-serif;font-weight:600;color:var(--navy);font-size:1.35rem;margin:0 0 6px}
+    .zp-contact .zp-form .zp-sub{color:var(--gray);font-size:.95rem;margin:0 0 26px}
+    .zp-contact .zp-field{margin-bottom:18px}
+    .zp-contact .zp-field label{display:block;font-weight:700;font-size:.85rem;color:var(--navy);margin-bottom:7px}
+    .zp-contact .zp-field label span{color:var(--sky)}
+    .zp-contact .zp-field input,.zp-contact .zp-field select,.zp-contact .zp-field textarea{width:100%;padding:13px 15px;border:1px solid #d7e3ee;border-radius:var(--radius);font-family:var(--font-body),sans-serif;font-size:.95rem;color:var(--ink);background:var(--bg-soft);transition:border-color .2s,box-shadow .2s}
+    .zp-contact .zp-field input:focus,.zp-contact .zp-field select:focus,.zp-contact .zp-field textarea:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(114,19,163,.15);background:var(--white)}
+    .zp-contact .zp-field textarea{resize:vertical;min-height:130px}
+    .zp-contact .zp-btn{display:inline-flex;align-items:center;gap:10px;background:var(--sky);color:var(--white);border:none;padding:15px 34px;border-radius:var(--radius);font-family:var(--font-body),sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.5px;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s;box-shadow:0 8px 20px rgba(114,19,163,.28)}
+    .zp-contact .zp-btn:hover{background:var(--sky-light);transform:translateY(-2px)}
+    .zp-contact .zp-btn svg{width:18px;height:18px}
+
+    /* INFO CARDS */
+    .zp-contact .zp-info{display:flex;flex-direction:column;gap:18px}
+    .zp-contact .zp-icard{display:flex;gap:16px;align-items:flex-start;background:var(--white);border:1px solid #e6eef5;border-radius:var(--radius);padding:22px;box-shadow:0 6px 18px rgba(74,11,107,.05);transition:transform .2s,box-shadow .2s}
+    .zp-contact .zp-icard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(74,11,107,.1)}
+    .zp-contact .zp-ic{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--tint);color:var(--navy);display:flex;align-items:center;justify-content:center}
+    .zp-contact .zp-ic svg{width:24px;height:24px}
+    .zp-contact .zp-icard h4{font-family:var(--font-body),sans-serif;font-weight:600;color:var(--navy);font-size:1.05rem;margin:0 0 4px}
+    .zp-contact .zp-icard p{margin:0;color:var(--gray);font-size:.92rem}
+    .zp-contact .zp-icard a{color:var(--sky);font-weight:700;text-decoration:none}
+    .zp-contact .zp-icard a:hover{text-decoration:underline}
+
+    /* MAP */
+    .zp-contact .zp-mapsec{background:var(--bg-soft);padding:72px 0}
+    .zp-contact .zp-map{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid #e6eef5;box-shadow:0 12px 34px rgba(74,11,107,.08);height:420px}
+    .zp-contact .zp-map iframe{width:100%;height:100%;border:0;display:block;filter:saturate(1.05)}
+    .zp-contact .zp-mapbadge{position:absolute;top:18px;left:18px;background:var(--white);border-radius:var(--radius);padding:12px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 20px rgba(74,11,107,.14);max-width:280px}
+    .zp-contact .zp-mapbadge svg{width:22px;height:22px;color:var(--sky);flex:0 0 auto}
+    .zp-contact .zp-mapbadge strong{display:block;font-family:var(--font-body),sans-serif;color:var(--navy);font-size:.9rem}
+    .zp-contact .zp-mapbadge span{font-size:.8rem;color:var(--gray)}
+
+    /* FAQ */
+    .zp-contact .zp-faq{max-width:820px;margin:0 auto}
+    .zp-contact .zp-faq details{background:var(--white);border:1px solid #e6eef5;border-radius:var(--radius);margin-bottom:14px;box-shadow:0 4px 14px rgba(74,11,107,.04);overflow:hidden;transition:box-shadow .2s}
+    .zp-contact .zp-faq details[open]{box-shadow:0 10px 26px rgba(74,11,107,.09)}
+    .zp-contact .zp-faq summary{list-style:none;cursor:pointer;padding:20px 24px;font-family:var(--font-body),sans-serif;font-weight:600;color:var(--navy);font-size:1.02rem;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .zp-contact .zp-faq summary::-webkit-details-marker{display:none}
+    .zp-contact .zp-faq summary .zp-plus{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--tint);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:1.2rem;line-height:1;transition:transform .25s,background .2s}
+    .zp-contact .zp-faq details[open] summary .zp-plus{transform:rotate(45deg);background:var(--sky);color:var(--white)}
+    .zp-contact .zp-faq .zp-ans{padding:0 24px 22px;color:var(--gray);font-size:.95rem}
+
+    @media(max-width:800px){
+      .zp-contact .zp-grid{grid-template-columns:1fr}
+      .zp-contact .zp-sec,.zp-contact .zp-mapsec{padding:52px 0}
+      .zp-contact .zp-form{padding:26px}
+      .zp-contact .zp-map{height:340px}
+    }

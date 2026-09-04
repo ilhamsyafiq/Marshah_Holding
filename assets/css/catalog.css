@@ -1,0 +1,108 @@
+/* MARSHAH HOLDING — Katalog (muat turun) page
+   Static mockup: a grid of catalogs the visitor can pick and download. */
+
+.zc-catalog{
+  background:
+    radial-gradient(120% 90% at 100% 0%, var(--purple-050) 0%, transparent 55%),
+    radial-gradient(120% 90% at 0% 100%, var(--tint) 0%, transparent 50%),
+    #fff;
+}
+.zc-wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(18px,4vw,64px)}
+
+/* ===== HERO ===== */
+.zc-hero{padding:clamp(48px,7vw,96px) 0 clamp(28px,4vw,48px);text-align:center}
+.zc-eyebrow{
+  display:inline-flex;align-items:center;gap:.5em;
+  font-family:var(--font-body),sans-serif;font-weight:600;font-size:.72rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--purple);background:#fff;
+  border:1px solid var(--tint);border-radius:999px;
+  padding:.5em 1.1em;margin-bottom:1.1rem;
+  box-shadow:0 8px 26px -18px rgba(114,19,163,.6);
+}
+.zc-eyebrow svg{width:15px;height:15px}
+.zc-hero h1{
+  font-size:clamp(1.9rem,4.4vw,3.2rem);font-weight:800;
+  letter-spacing:-.01em;max-width:16ch;margin:0 auto .5rem;
+}
+.zc-hero h1 span{color:var(--purple)}
+.zc-hero .zc-lead{
+  color:var(--gray);font-size:clamp(1rem,1.5vw,1.15rem);
+  max-width:60ch;margin:0 auto;
+}
+
+/* ===== GRID ===== */
+.zc-grid{
+  display:grid;gap:clamp(20px,2.4vw,32px);
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  padding-bottom:clamp(56px,8vw,110px);
+}
+
+.zc-card{
+  position:relative;display:flex;flex-direction:column;
+  background:#fff;border:1px solid var(--tint);
+  border-radius:16px;overflow:hidden;
+  box-shadow:0 18px 40px -30px rgba(20,16,24,.55);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.zc-card:hover{
+  transform:translateY(-6px);border-color:var(--purple-light);
+  box-shadow:0 30px 60px -32px rgba(114,19,163,.55);
+}
+
+.zc-card__media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--purple-050)}
+.zc-card__media img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .5s ease;
+}
+.zc-card:hover .zc-card__media img{transform:scale(1.06)}
+.zc-card__tag{
+  position:absolute;top:12px;left:12px;
+  font-family:var(--font-body),sans-serif;font-weight:600;font-size:.68rem;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:#fff;background:rgba(20,16,24,.62);backdrop-filter:blur(4px);
+  padding:.4em .8em;border-radius:999px;
+}
+.zc-card__count{
+  position:absolute;bottom:12px;right:12px;
+  font-family:var(--font-body),sans-serif;font-weight:700;font-size:.72rem;
+  color:var(--purple);background:rgba(255,255,255,.92);
+  padding:.4em .75em;border-radius:999px;
+  box-shadow:0 6px 16px -8px rgba(20,16,24,.5);
+}
+
+.zc-card__body{display:flex;flex-direction:column;gap:.5rem;padding:20px 20px 22px;flex:1}
+.zc-card__body h3{font-size:1.18rem;font-weight:700;margin:0}
+.zc-card__body p{color:var(--gray);font-size:.94rem;margin:0}
+
+.zc-card__meta{
+  display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin-top:.35rem;
+  font-size:.8rem;color:var(--gray);
+}
+.zc-card__meta span{display:inline-flex;align-items:center;gap:.35em}
+.zc-card__meta svg{width:14px;height:14px;color:var(--purple)}
+
+.zc-card__btn{
+  margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:.55em;
+  font-family:var(--font-body),sans-serif;font-weight:600;font-size:.9rem;
+  color:#fff;text-decoration:none;
+  background:linear-gradient(135deg,var(--purple),var(--purple-light));
+  padding:.8em 1.1em;border-radius:12px;
+  box-shadow:0 14px 30px -16px rgba(114,19,163,.75);
+  transition:filter .2s ease,transform .2s ease;
+}
+.zc-card__btn:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.zc-card__btn svg{width:17px;height:17px}
+
+/* ===== FALLBACK / MOCKUP NOTE ===== */
+.zc-note{
+  display:flex;align-items:flex-start;gap:.7em;
+  max-width:var(--maxw);margin:0 auto clamp(48px,7vw,90px);
+  padding:16px clamp(18px,4vw,64px);
+  color:var(--gray);font-size:.9rem;
+}
+.zc-note svg{width:18px;height:18px;color:var(--purple);flex:none;margin-top:2px}
+
+@media (max-width:520px){
+  .zc-grid{grid-template-columns:1fr}
+}

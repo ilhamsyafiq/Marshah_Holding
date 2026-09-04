@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Butiran Projek – Marshah Holding</title>
+<meta name="description" content="Butiran projek rumah banglo oleh Marshah Holding di Kelantan — spesifikasi, galeri gambar dan anggaran kos bina.">
+<meta name="geo.region" content="MY-03">
+<meta name="geo.placename" content="Kota Bharu">
+<meta name="ICBM" content="6.1333, 102.2833">
+<meta property="og:title" content="Butiran Projek – Marshah Holding">
+<meta property="og:description" content="Butiran projek rumah banglo oleh Marshah Holding di Kelantan — spesifikasi, galeri gambar dan anggaran kos bina.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ms_MY">
+<meta property="og:site_name" content="Marshah Holding Sdn Bhd">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/shared.css">
+<link rel="stylesheet" href="assets/css/nav.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/portfolio-detail.css">
+</head>
+<body>
+<section class="zh-nav">
+  
+
+  <input type="checkbox" id="zh-menu-toggle" class="zh-toggle" hidden>
+  <nav class="zh-bar" aria-label="Navigasi utama">
+
+    <a href="index.html" class="zh-logo" aria-label="MARSHAH HOLDING - Halaman Utama">
+      <img src="assets/img/logo-marshah.png" alt="Marshah Holding Sdn Bhd" class="zh-logo-img">
+    </a>
+
+    <ul class="zh-links">
+      <li><a href="index.html">Halaman Utama</a></li>
+      <li><a href="promosi.html">Promosi</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="rumah-siap.html">Rumah Siap</a></li>
+      <li class="zh-has-drop"><a href="profile-syarikat.html" tabindex="0">Tentang Kami
+        <svg class="zh-caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+        <ul class="zh-drop">
+          <li><a href="profile-syarikat.html">Profile Syarikat</a></li>
+          <li><a href="pengurusan.html">Pengurusan</a></li>
+        </ul>
+      </li>
+      <li><a href="kalkulator-lppsa.html">Kalkulator</a></li>
+      <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+      <span class="zh-nav__cursor" aria-hidden="true"></span>
+    </ul>
+
+    <div class="zh-cta">
+      <a href="index.html#katalog" aria-label="Muat turun katalog">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        DOWNLOAD KATALOG
+      </a>
+    </div>
+
+    <label for="zh-menu-toggle" class="zh-burger" aria-label="Buka menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </label>
+
+  </nav>
+  <script>/*zh-nav-pill*/
+  (function(){
+    var bar=document.currentScript.closest('.zh-nav'); if(!bar) return;
+    var ul=bar.querySelector('.zh-links'), cur=bar.querySelector('.zh-nav__cursor');
+    if(!ul) return;
+    var path=(location.pathname.split('/').pop()||'index.html'); if(path==='') path='index.html';
+    var map={'pengurusan.html':'profile-syarikat.html','portfolio-detail.html':'portfolio.html','promosi.php':'promosi.html'};
+    var target=map[path]||path;
+    ul.querySelectorAll('li>a').forEach(function(a){ if(a.getAttribute('href')===target) a.parentElement.classList.add('is-active'); });
+    if(cur){
+      ul.querySelectorAll(':scope>li').forEach(function(li){
+        li.addEventListener('mouseenter',function(){
+          if(window.innerWidth<=960) return;
+          cur.style.left=li.offsetLeft+'px'; cur.style.width=li.offsetWidth+'px'; cur.style.opacity='1';
+        });
+      });
+      ul.addEventListener('mouseleave',function(){ cur.style.opacity='0'; });
+    }
+  })();
+  </script>
+</section>
+<main class="zp-portfolio">
+
+  <!-- PAGE HEADER -->
+  <header class="zpd-header">
+    <h1 id="zpd-title">Butiran Projek</h1>
+    <div class="zpd-crumb"><a href="index.html">Halaman Utama</a> / <a href="portfolio.html">Portfolio</a> / <span id="zpd-crumb-name">Butiran</span></div>
+  </header>
+
+  <!-- CONTENT (dijana oleh JS) -->
+  <div id="zpd-content" class="zpd-wrap"></div>
+
+</main>
+<script src="assets/js/portfolio-data.js"></script>
+<script>
+(function () {
+  function qs(name) {
+    var m = new RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return m ? decodeURIComponent(m[1].replace(/\+/g, ' ')) : null;
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  var id = qs('id');
+  var content = document.getElementById('zpd-content');
+  var project = (typeof PORTFOLIO_BY_ID !== 'undefined' && id) ? PORTFOLIO_BY_ID[id] : null;
+
+  if (!project) {
+    document.getElementById('zpd-title').textContent = 'Projek Tidak Dijumpai';
+    document.getElementById('zpd-crumb-name').textContent = 'Tidak Dijumpai';
+    document.title = 'Projek Tidak Dijumpai – Marshah Holding';
+    content.innerHTML =
+      '<div class="zpd-empty">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>' +
+        '<h2>Maaf, projek ini tidak dijumpai</h2>' +
+        '<p>Projek yang anda cari mungkin telah dialih atau pautannya tidak sah. Sila lihat semula senarai portfolio kami.</p>' +
+        '<a class="zpd-btn primary" href="portfolio.html">Kembali ke Portfolio' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
+        '</a>' +
+      '</div>';
+    return;
+  }
+
+  // Meta / header
+  document.title = project.name + ' – Marshah Holding';
+  var metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.setAttribute('content', project.name + ' di ' + project.location + ' — ' + project.bedrooms + ' bilik, ' + project.bathrooms + ' bilik air, ' + project.area.toLocaleString() + ' kaki persegi. Anggaran kos bina ' + project.cost + ' oleh Marshah Holding.');
+  document.getElementById('zpd-title').textContent = project.name;
+  document.getElementById('zpd-crumb-name').textContent = project.name;
+
+  var statusClass = project.status === 'Siap' ? 'siap' : 'bina';
+  var imgs = project.images || [];
+  var mainImg = imgs[0] || '';
+
+  var thumbsHtml = imgs.map(function (src, idx) {
+    return '<button type="button" class="zpd-thumb' + (idx === 0 ? ' is-active' : '') + '" data-src="' + esc(src) + '">' +
+      '<img src="' + esc(src) + '" alt="' + esc(project.name) + ' gambar ' + (idx + 1) + '" loading="lazy"></button>';
+  }).join('');
+
+  var descHtml = (project.description || []).map(function (p) {
+    return '<p>' + esc(p) + '</p>';
+  }).join('');
+
+  var waText = encodeURIComponent('Salam, saya berminat dengan projek "' + project.name + '" (' + project.location + '). Boleh saya dapatkan maklumat lanjut?');
+
+  content.innerHTML =
+    '<section class="zpd-top">' +
+      '<h2 class="zpd-name">' + esc(project.name) + '</h2>' +
+      '<div class="zpd-meta">' +
+        '<span class="zpd-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>' + esc(project.location) + '</span>' +
+        '<span class="zpd-status ' + statusClass + '">' + esc(project.status) + '</span>' +
+      '</div>' +
+    '</section>' +
+
+    '<section class="zpd-gallery">' +
+      '<div class="zpd-main"><img id="zpd-main-img" src="' + esc(mainImg) + '" alt="' + esc(project.name) + '"></div>' +
+      '<div class="zpd-thumbs">' + thumbsHtml + '</div>' +
+    '</section>' +
+
+    '<section class="zpd-specs">' +
+      '<div class="zpd-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg><span class="zpd-val">' + project.bedrooms + '</span><span class="zpd-lbl">Bilik Tidur</span></div>' +
+      '<div class="zpd-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"/><path d="M6 12V5a2 2 0 0 1 2-2h1"/><line x1="5" y1="20" x2="5" y2="22"/><line x1="19" y1="20" x2="19" y2="22"/></svg><span class="zpd-val">' + project.bathrooms + '</span><span class="zpd-lbl">Bilik Air</span></div>' +
+      '<div class="zpd-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M9 3v18"/><path d="M3 9h18"/></svg><span class="zpd-val">' + project.area.toLocaleString() + '</span><span class="zpd-lbl">Kaki Persegi</span></div>' +
+      '<div class="zpd-spec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg><span class="zpd-val">' + esc(project.cost) + '</span><span class="zpd-lbl">Anggaran Kos</span></div>' +
+    '</section>' +
+
+    '<section class="zpd-desc">' +
+      '<h2>Mengenai Projek Ini</h2>' +
+      descHtml +
+    '</section>' +
+
+    '<section class="zpd-cta">' +
+      '<a class="zpd-btn primary" href="hubungi-kami.html">Hubungi Kami' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
+      '</a>' +
+      '<a class="zpd-btn wa" href="https://wa.me/6097678466?text=' + waText + '" target="_blank" rel="noopener">' +
+        '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5s-.6-1.5-.8-2c-.2-.5-.4-.4-.6-.5H8a1 1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.6 5.6 0 0 0 1.2 3 12.7 12.7 0 0 0 4.9 4.3c2 .8 2 .5 2.4.5a2.9 2.9 0 0 0 1.9-1.4 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>' +
+        'WhatsApp Kami' +
+      '</a>' +
+      '<a class="zpd-btn ghost" href="portfolio.html">Kembali ke Portfolio</a>' +
+    '</section>';
+
+  // Gallery thumbnail swap
+  var mainImgEl = document.getElementById('zpd-main-img');
+  var thumbs = content.querySelectorAll('.zpd-thumb');
+  thumbs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      mainImgEl.src = t.getAttribute('data-src');
+      thumbs.forEach(function (o) { o.classList.remove('is-active'); });
+      t.classList.add('is-active');
+    });
+  });
+})();
+</script>
+<section class="zh-footer">
+
+  <!-- MAIN -->
+  <div class="zh-main">
+    <div class="zh-inner">
+      <div class="zh-grid">
+
+        <!-- COL 1: LOKASI -->
+        <div class="zh-col">
+          <div class="zh-logo">
+            <img src="assets/img/logo-marshah-white.png" alt="Marshah Holding Sdn Bhd" class="zh-foot-logo-img">
+          </div>
+          <h4>Lokasi</h4>
+          <div class="zh-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>822, Jalan KK 2/4, Kubang Kerian, 16150 Kota Bharu, Kelantan.</span>
+          </div>
+        </div>
+
+        <!-- COL 2: TENTANG KAMI -->
+        <div class="zh-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Halaman Utama</a></li>
+            <li><a href="promosi.html">Promosi</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="rumah-siap.html">Rumah Siap</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 3: LAIN-LAIN -->
+        <div class="zh-col">
+          <h4>Tentang Kami</h4>
+          <ul>
+            <li><a href="profile-syarikat.html">Profile Syarikat</a></li>
+            <li><a href="pengurusan.html">Pengurusan</a></li>
+            <li><a href="kalkulator-lppsa.html">Kalkulator</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+                <!-- COL 4: PETA LOKASI -->
+        <div class="zh-col zh-col--map">
+          <h4>Peta Lokasi</h4>
+          <div class="zh-map">
+            <iframe class="zh-map__frame" title="Peta lokasi Marshah Holding" src="https://www.google.com/maps?q=822%20Jalan%20KK%202%2F4%20Kubang%20Kerian%2016150%20Kota%20Bharu%20Kelantan&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a class="zh-map__link" href="https://www.google.com/maps/search/?api=1&query=822%20Jalan%20KK%202%2F4%20Kubang%20Kerian%2016150%20Kota%20Bharu%20Kelantan" target="_blank" rel="noopener" aria-label="Buka lokasi Marshah Holding di Google Maps">
+              <span class="zh-map__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Buka di Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- BOTTOM BAR -->
+  <div class="zh-bottom">
+    <div class="zh-inner">
+      <div class="zh-copy">&copy; 2026 Marshah Holding Sdn Bhd (XXXXXX-X). Hak Cipta Terpelihara.</div>
+      <div class="zh-foot-social">
+        <a href="#" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.4 2.3 1.7 3.9 4 4.2v2.6c-1.4.1-2.7-.3-4-1v6.1c0 3.7-2.8 6.1-6.2 5.9C6.9 20.6 4.8 18 5 15c.2-2.7 2.4-4.7 5.1-4.7.3 0 .6 0 .9.1v2.8c-.3-.1-.6-.2-1-.2-1.3 0-2.4 1.1-2.3 2.5.1 1.2 1.1 2.2 2.3 2.2 1.4 0 2.5-1.1 2.5-2.5V3h2.9Z"/></svg></a>
+        <a href="https://www.facebook.com/MarshahHoldingSdnBhd" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg></a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+      <div class="zh-bottom-links">
+        <a href="#privasi">Dasar Privasi</a>
+        <a href="#terma">Terma &amp; Syarat</a>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

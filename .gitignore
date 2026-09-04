@@ -1,0 +1,13 @@
+# Environment
+.env
+
+# Editor local history
+.history/
+
+# Runtime data
+storage/leads.json
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.log

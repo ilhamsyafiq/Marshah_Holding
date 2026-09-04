@@ -1,0 +1,45 @@
+/* MARSHAH HOLDING — global tokens + reset
+   Palette: light purple + white + a touch of black.
+   NOTE: legacy variable names (--sky, --navy, --tint) are kept and simply
+   re-pointed at purple values so every existing page picks up the new brand
+   with no per-page edits. New semantic aliases (--purple*) added for clarity. */
+:root{
+  /* brand purples */
+  --purple:#7213A3;
+  --purple-light:#CD1BE9;
+  --purple-050:#F8EAFC;
+
+  /* legacy names -> purple (used across all pages) */
+  --sky:#7213A3;        /* primary brand (was blue) */
+  --sky-light:#CD1BE9;  /* lighter brand */
+  --navy:#4A0B6B;       /* deep purple for dark bg/text (was navy) */
+  --ink:#141018;        /* near-black */
+  --tint:#F6DCFB;       /* soft purple tint */
+  --gray:#6b7280;
+  --bg-soft:#FDF5FF;    /* off-white with purple hint */
+  --white:#ffffff;
+
+  --radius:10px;
+  --maxw:1600px;
+
+  /* Site typography (matches promosi.html): editorial serif headings + Manrope UI */
+  --font-head:'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --font-body:'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  color:#141018;
+  background:#ffffff;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+/* All headings use the serif display face site-wide. !important so per-page
+   rules that still name the old Poppins face don't override the unified look. */
+h1,h2,h3,h4,h5,h6{font-family:var(--font-head) !important;font-weight:400 !important;margin:0 0 .4em;line-height:1.15}
+p{margin:0 0 1em}
+img{max-width:100%;display:block}
+a{color:inherit}
+section{overflow:hidden}

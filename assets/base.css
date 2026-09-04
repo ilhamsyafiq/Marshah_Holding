@@ -1,0 +1,28 @@
+/* ZASMA HOME — global shell tokens (palette extracted 100% from zasmahome.com) */
+:root{
+  --sky:#27AAE1;
+  --sky-light:#3DBFE8;
+  --navy:#002750;
+  --ink:#111116;
+  --tint:#BDE1F4;
+  --gray:#6b7280;
+  --bg-soft:#f4f8fb;
+  --white:#ffffff;
+  --radius:10px;
+  --maxw:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:#111116;
+  background:#ffffff;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;margin:0 0 .4em;line-height:1.15}
+p{margin:0 0 1em}
+img{max-width:100%;display:block}
+a{color:inherit}
+section{overflow:hidden}
