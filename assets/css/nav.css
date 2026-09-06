@@ -50,10 +50,10 @@
       .zh-nav .zh-links>li{border-bottom:1px solid #eef3f7}
       .zh-nav .zh-links a{padding:15px 4px;font-size:16px;justify-content:space-between;border-radius:0}
       .zh-nav .zh-links>li:hover>a{color:var(--navy)}
-      .zh-nav .zh-toggle:checked~.zh-links{max-height:640px}
-      .zh-nav .zh-toggle:checked~.zh-burger span:nth-child(1){transform:translateY(9px) rotate(45deg)}
-      .zh-nav .zh-toggle:checked~.zh-burger span:nth-child(2){opacity:0}
-      .zh-nav .zh-toggle:checked~.zh-burger span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+      .zh-nav .zh-toggle:checked~.zh-bar .zh-links{max-height:640px}
+      .zh-nav .zh-toggle:checked~.zh-bar .zh-burger span:nth-child(1){transform:translateY(9px) rotate(45deg)}
+      .zh-nav .zh-toggle:checked~.zh-bar .zh-burger span:nth-child(2){opacity:0}
+      .zh-nav .zh-toggle:checked~.zh-bar .zh-burger span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
       .zh-nav .zh-drop{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;padding:0 0 8px 12px;min-width:0;max-height:0;overflow:hidden;transition:max-height .3s ease}
       .zh-nav .zh-has-drop{padding-bottom:0;margin-bottom:0}
       .zh-nav .zh-has-drop:hover .zh-caret{transform:none}
